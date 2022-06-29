@@ -5,4 +5,15 @@ The **Threat Oracle Engine** (THOE) is the tool for scanning the system for know
 -	Searching for vulnerabilities published in different data sources, such as NVD, ExploitDB, etc. It is flexible enough to allow adding new sources.
 -	Continuous monitoring for vulnerabilities and configuration
 -	Local or remote search of vulnerabilities
-P
+
+
+## Prerequisites
+TODO: Prerequisites for running THOE (OS, Docker version...)
+
+## How to run
+
+TODO: Instructions for running THOE (Docker commands...)
+
+## CI/CD
+
+TODO: Add information regarding to CI/CD pipeline
