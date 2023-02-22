@@ -17,32 +17,32 @@ Prerequisites for running THOE.
 Instructions for running THOE.
 
 1. Install a kubernetes cluster based on a single node
-- Install microK8s.
+    1. Install microK8s. \
 ```$ sudo snap install microk8s --classic --channel=1.25/stable```
-- Set permissions to access MicroK8s.
-```$ sudo usermod -a -G microk8s $USER```
-```$ sudo chown -f -R $USER ~/.kube```
+    2. Set permissions to access MicroK8s.\
+```$ sudo usermod -a -G microk8s $USER``` \
+```$ sudo chown -f -R $USER ~/.kube``` \
 ```$ su - $USER```
-- Output status information, including the current state of the MicroK8s node and a list of all the available extensions.
+    3. Output status information, including the current state of the MicroK8s node and a list of all the available extensions. \
 ```$ microk8s status --wait-ready```
-- Check that the Kubernetes cluster is up and running.
+    4. Check that the Kubernetes cluster is up and running. \
 ```$ microk8s kubectl get nodes```
 
 2. Install the necessary plugins
-- To operate and deploy the PKI.
-```$ microk8s enable dns```
-```$ microk8s enable hostpath-storage```
-```$ microk8s enable cert-manager```
+    1. To operate and deploy the PKI. \
+```$ microk8s enable dns``` \
+```$ microk8s enable hostpath-storage``` \
+```$ microk8s enable cert-manager``` \
 ```$ microk8s enable ingress```
-- Kubernetes LoadBalancer service.
-NOTE: the CDIR subnet range can vary depending on the network interface used.
-```$ microk8s enable metallb```
+    2. Kubernetes LoadBalancer service. \
+NOTE: the CDIR subnet range can vary depending on the network interface used. \
+```$ microk8s enable metallb``` \
 ```$ microk8s enable metallb:192.168.1.240/24```
 
-3. Check the resources/applications launched in the kubernetes cluster.
+3. Check the resources/applications launched in the kubernetes cluster. \
 ```$ microk8s kubectl get pods -A```
 
-4. Deployment
+4. Deployment \
 ```$ microk8s helm3 install thoe . --create-namespace -n thoe --set storageClassName=microk8s-hostpath --set domain={DOMAIN}```
 
 ## CI/CD
