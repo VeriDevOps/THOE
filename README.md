@@ -47,3 +47,5 @@ NOTE: the CDIR subnet range can vary depending on the network interface used. \
 
 ## CI/CD
 TODO: Information regarding to CI/CD pipeline
+
+Ongoing...
