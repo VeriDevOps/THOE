@@ -47,22 +47,23 @@ NOTE: the CDIR subnet range can vary depending on the network interface used. \
 
 ## User manual
 
-### Main dashboard
+- Main dashboard
 The main dashboard of THOE provides an overall statisticall analisys of the data that is stored on THOE, including the amount of known vulnerabilities and how critical are those vulnerabilities as specify by the NIST.
 ![Main dashboard](images/main-dashboard.png "Main dashboard")
 
-### Catalog
+- CVE catalog
 In the CVEs catalog you can see all the CVEs stored in THOE database. For now, THOE has more than 200K CVEs stored.
 ![CVEs catalog](images/cves-catalog.png "CVEs catalog")
 
+- CPE catalog
 In the CPEs catalog you can see all the CPEs stored in THOE database. For now, THOE has more than 1M CPEs stored.
 ![CPEs catalog](images/cpes-catalog.png "CPEs catalog")
 
-
-### Asset Manager
+- Asset Manager
 The Asset Manager page is where you define the set of components of your asset inventory, including HW platforms, SW applications and Operative Systems. THOE tracks the vulnerabilities associated to each one. 
 ![Asset manager](images/asset-definition.png "Asset manager")
 
+- List of components
 Within each asset, there is a list of components, with it associated CPE. The components defined here will be monitored by THOE. THOE will perform periodicall searchs to the public vulnerabilities databases in order to check if there are new vulnerabilities (CVEs) that may affect some component. 
 ![List of components](images/list-of-components.png "List of components")
 
