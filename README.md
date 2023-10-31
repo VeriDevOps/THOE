@@ -30,11 +30,9 @@ The **Threat Oracle Engine** (THOE) is the tool for scanning the system for know
 
 THOE tool contributes to the CI/CD of the scenarios defined in VeriDevOps. In particular, THOE contributes to the CI/CD cycle in the plan and monitor phases.
 
-<img src="images/devops.png" alt="DevOps" width="50"/>
+<img src="images/devops.png" alt="DevOps" width="300"/>
 
 ## How to run
-
-Instructions for running THOE.
 
 ### Prerequisites
 
@@ -44,6 +42,8 @@ Prerequisites for running THOE.
 - Distro: microK8s
 
 ### Deployment
+
+Instructions for running THOE.
 
 1. Install a kubernetes cluster based on a single node
     1. Install microK8s. \
