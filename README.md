@@ -89,7 +89,6 @@ The subscriptions page allows the user to subscribe to e-mails on both snapshot 
 ![Subscriptions](images/subscriptions.png "Subscriptions")
 
 ## CI/CD
-THOE tool is under continuous development and integration for delivery to the end users. For this purpose, the following methodology is followed:
-1. The development of new functionalities is carried out in a test environment.
-2. The changes are then verified in that test environment.
-3. When a stable version of THOE is available, it is deployed in the production environment.
+
+THOE tool contributes to the CI/CD of the scenarios defined in VeriDevOps. In particular, THOE contributes to the CI/CD cycle in the plan and monitor phases.
+![DevOps](images/devops.png "DevOps")
