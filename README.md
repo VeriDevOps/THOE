@@ -1,20 +1,49 @@
 # THOE
 
+## Table of Contents
+
+* [Introduction](#introduction)
+* [CI/CD](#cicd)
+* [How to run](#how-to-run)
+    * [Prerequisites](#prerequisites)
+    * [Deployment](#deployment)
+* [User manual](#user-manual)
+    * [Main dashboard](#main-dashboard)
+    * [CVE catalog](#cve-catalog)
+    * [CPE catalog](#cpe-catalog)
+    * [Asset Manager](#asset-manager)
+    * [Asset Information](#asset-information)
+    * [Data Sources](#data-sources)
+    * [Scheduler](#scheduler)
+    * [Subscriptions](#subscriptions)
+
+
+## Introduction
+
 The **Threat Oracle Engine** (THOE) is the tool for scanning the system for known vulnerabilities based on the information obtained from online vulnerability databases, such as, for example, [NVD](https://nvd.nist.gov/) database. THOE is a solution for industrial control systems, including embedded systems with limited resources, and it enables:
 -	Automatic detection of publicly known vulnerabilities affecting software and hardware used by a product during its development process and whole lifecycle.
 -	Searching for vulnerabilities published in different data sources, such as NVD, ExploitDB, etc. It is flexible enough to allow adding new sources.
 -	Continuous monitoring for vulnerabilities and configuration
 -	Local or remote search of vulnerabilities
 
+## CI/CD
 
-## Prerequisites
+THOE tool contributes to the CI/CD of the scenarios defined in VeriDevOps. In particular, THOE contributes to the CI/CD cycle in the plan and monitor phases.
+
+<img src="images/devops.png" alt="DevOps" width="50"/>
+
+## How to run
+
+Instructions for running THOE.
+
+### Prerequisites
+
 Prerequisites for running THOE.
 - OS: Ubuntu 22.04
 - Kubernetes version 1.245
 - Distro: microK8s
 
-## How to run
-Instructions for running THOE.
+### Deployment
 
 1. Install a kubernetes cluster based on a single node
     1. Install microK8s. \
@@ -95,9 +124,3 @@ The Scheduler allows importing the CPEs and CVEs from data sources within a user
 The subscriptions page allows the user to subscribe to e-mails on both snapshot information (informs when an asset audit is completed) and alerts (informs with each new vulnerability found).
 
 ![Subscriptions](images/subscriptions.png)
-
-## CI/CD
-
-THOE tool contributes to the CI/CD of the scenarios defined in VeriDevOps. In particular, THOE contributes to the CI/CD cycle in the plan and monitor phases.
-
-![DevOps](images/devops.png)
