@@ -15,6 +15,10 @@
     * [Scheduler](#scheduler)
     * [Subscriptions](#subscriptions)
 * [Logs](#logs)
+    * [Asset Manager Logs](#asset-manager-logs)
+    * [Scheduler Logs](#scheduler-logs)
+    * [Vulernability Database Logs](#vulernability-database-logs)
+    * [Threat Finder Logs](#threat-finder-logs)
 
 ## Introduction
 
@@ -131,13 +135,13 @@ The subscriptions page allows the user to subscribe to e-mails on both snapshot 
 
 THOE log information is only accessible by system administrator users. It stores information about the status and events occurring in the different subsystems of THOE. 
 
-### Scheduler Logs
-
-![Scheduler logs](images/logsSCH.png)
-
 ### Asset Manager Logs
 
 ![Asset Manager logs](images/logsAM.png)
+
+### Scheduler Logs
+
+![Scheduler logs](images/logsSCH.png)
 
 ### Vulernability Database Logs
 
@@ -145,4 +149,4 @@ THOE log information is only accessible by system administrator users. It stores
 
 ### Threat Finder Logs
 
-![Threat Finder logs](images/logs_TFH.png)
+![Threat Finder logs](images/logsTHF.png)
