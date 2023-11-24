@@ -14,7 +14,7 @@
     * [Asset Manager](#asset-manager)
     * [Scheduler](#scheduler)
     * [Subscriptions](#subscriptions)
-
+* [Logs](#logs)
 
 ## Introduction
 
@@ -72,6 +72,7 @@ NOTE: the CDIR subnet range can vary depending on the network interface used. \
 4. Deployment \
 ```$ microk8s helm3 install thoe . --create-namespace -n thoe --set storageClassName=microk8s-hostpath --set domain={DOMAIN}```
 
+
 ## User manual
 
 ### Main dashboard
@@ -124,3 +125,24 @@ The Scheduler allows importing the CPEs and CVEs from data sources within a user
 The subscriptions page allows the user to subscribe to e-mails on both snapshot information (informs when an asset audit is completed) and alerts (informs with each new vulnerability found).
 
 ![Subscriptions](images/subscriptions.png)
+
+
+## Logs
+
+THOE log information is only accessible by system administrator users. It stores information about the status and events occurring in the different subsystems of THOE. 
+
+### Scheduler Logs
+
+![Scheduler logs](images/logsSCH.png)
+
+### Asset Manager Logs
+
+![Asset Manager logs](images/logsAM.png)
+
+### Vulernability Database Logs
+
+![Vulernability Database logs](images/logsF.png)
+
+### Threat Finder Logs
+
+![Threat Finder logs](images/logs_TFH.png)
